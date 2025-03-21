@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3e5d8; /* Warm latte beige */
+    color: #3e2723; /* Rich espresso brown */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    scroll-behavior: smooth; /* Ensure smooth scrolling by default */
+}
+
+/*  Fullscreen Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 50px;
+    background: url('coffee-beans.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Dark overlay for better readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 33, 19, 0.6); /* Deep mocha overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 50%;
+    color: #ffeadb; /* Light creamy coffee */
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+/*  Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background: #8b5e3c; /* Deep coffee brown */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 25px;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background: #6a4229; /* Even deeper roast */
+    transform: scale(1.05);
+}
+
+/*  Scroll Down Indicator */
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #ffeadb;
+    animation: bounce 1.5s infinite;
+    z-index: 1;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #fffaf5; /* Very light coffee cream */
+    border-top: 5px solid #8b5e3c;
+    padding: 20px;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3e2723;
+    color: #ffeadb;
+    font-size: 1.1em;
+}
